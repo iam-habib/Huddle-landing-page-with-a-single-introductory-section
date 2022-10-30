@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz@1,9..144&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Lato&family=Libre+Franklin:wght@300;400;600&family=Manrope:wght@500;700&family=Montserrat&family=Open+Sans:wght@400;800&family=Oswald&family=Poppins:wght@300;400;600&family=Roboto&display=swap");
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.huddle_header {
+  width: 100%;
+  height: 100vh;
+  background: url(images/bg-desktop.svg), var(--Violet);
+  background-size: cover;
+  position: relative;
+}
+
+.logo {
+  width: 90%;
+  margin: auto;
+}
+
+.logo img {
+  width: 200px;
+  margin: 3em auto 5em;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .left {
+  width: 55%;
+}
+
+.left img {
+  width: 100%;
+}
+
+.main .right {
+  width: 40%;
+  margin: 7em auto 0em;
+}
+
+.right h1 {
+  font-family: "poppins";
+  color: white;
+  font-size: 3rem;
+}
+
+.right p {
+  font-family: "open sans";
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5em;
+  margin: 1em auto;
+}
+
+.right a {
+  display: inline-block;
+  font-family: "poppins";
+  color: black;
+  padding: 1em 4em;
+  border-radius: 2em;
+  background-color: white;
+  margin: 1em auto;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.right a:hover {
+  color: white;
+  background-color: var(--SoftMagenta);
+}
+
+.social_icons {
+  position: absolute;
+  bottom: 2%;
+  right: 5%;
+  font-size: 1em;
+  color: white;
+}
+
+.social_icons i {
+  padding: 0.5em;
+  margin-right: 0.5em;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.social_icons i:hover {
+  background-color: var(--SoftMagenta);
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1500px) {
+  .right h1 {
+    font-family: "poppins";
+    color: white;
+    font-size: 2.5rem;
+  }
+
+  .right p {
+    font-size: 1rem;
+  }
+  .main .right {
+    margin: 5em auto 0em;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1250px) {
+  html {
+    font-size: 14px;
+  }
+  .right h1 {
+    font-family: "poppins";
+    color: white;
+    font-size: 2.5rem;
+  }
+
+  .right p {
+    font-size: 0.9rem;
+  }
+
+  .main .right {
+    margin: 4.5em auto 0em;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1069px) {
+  html {
+    font-size: 14px;
+  }
+  .right h1 {
+    font-family: "poppins";
+    color: white;
+    font-size: 2.1rem;
+  }
+
+  .right p {
+    font-size: 0.9rem;
+  }
+
+  .main .right {
+    margin: 4.5em auto 0em;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 900px) {
+  html {
+    font-size: 14px;
+  }
+  .right h1 {
+    font-family: "poppins";
+    color: white;
+    font-size: 1.75rem;
+  }
+
+  .right p {
+    font-size: 0.9rem;
+  }
+
+  .main .right {
+    margin: 4em auto 0em;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 750px) {
+  html {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 80%;
+    margin: auto;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .main {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: translate(-0%, -0%);
+    width: 80%;
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+
+  .main .left {
+    width: 100%;
+    margin: 0 auto 2em;
+  }
+
+  .left img {
+    width: 90%;
+  }
+
+  .main .right {
+    width: 100%;
+  }
+
+  .right h1 {
+    font-family: "poppins";
+    color: white;
+    font-size: 1.6rem;
+  }
+
+  .right p {
+    font-size: 0.9rem;
+  }
+
+  .right a {
+    padding: 0.7em 5em;
+  }
+
+  .social_icons {
+    bottom: 2%;
+    right: 50%;
+    transform: translate(50%, 0);
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 300px) {
+  html {
+    font-size: 12px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .right h1 {
+    font-size: 1.4rem;
+  }
+}
